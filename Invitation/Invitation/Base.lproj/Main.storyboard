@@ -28,13 +28,8 @@
                                     <action selector="findCustomerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idY-ye-vSS"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="h3t-Cd-Ju9">
-                                <rect key="frame" x="188.5" y="295" width="37" height="37"/>
-                                <color key="color" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
                             <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-Nk-crY">
                                 <rect key="frame" x="0.0" y="5" width="414" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="customerCell" focusStyle="custom" textLabel="4Bx-ko-55f" detailTextLabel="2Rg-Lg-Ps8" style="IBUITableViewCellStyleSubtitle" id="rnl-rJ-pDZ" customClass="CustomerCell" customModule="Invitation" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
@@ -81,8 +76,6 @@
                             <constraint firstItem="GAe-UD-lYM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="LfT-Y9-G87"/>
                             <constraint firstItem="DXY-Nk-crY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Zrb-p2-R6F"/>
                             <constraint firstItem="GAe-UD-lYM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dPC-Gs-hBM"/>
-                            <constraint firstItem="h3t-Cd-Ju9" firstAttribute="centerX" secondItem="6Ve-fa-dFH" secondAttribute="centerX" id="hcQ-sf-Scp"/>
-                            <constraint firstItem="h3t-Cd-Ju9" firstAttribute="centerY" secondItem="6Ve-fa-dFH" secondAttribute="centerY" id="qHO-tV-8KK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -90,7 +83,6 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="customerTableView" destination="DXY-Nk-crY" id="RqE-Z3-xtP"/>
-                        <outlet property="loading" destination="h3t-Cd-Ju9" id="euO-YQ-pf5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
