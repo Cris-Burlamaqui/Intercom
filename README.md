@@ -1,2 +1,2 @@
-# intercom
+# Intercom
 Mobile Engineer - iOS assignment test
