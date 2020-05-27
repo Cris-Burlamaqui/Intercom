@@ -7,7 +7,7 @@
 
 - User must have an iPhone or a simulator with iOS version 13.5.
 - Open the project in XCode, conect you iPhone or choose a simulator, than run the app.
-- Click at the button  ![](images/find_customer.png) to see the list of customers within 100Km from Intercom office.
+- Click at the button  ![](images/find_customer.png) to see the list of customers within 100Km from Intercom's Dublin office.
 
 **To test the application:**
 
