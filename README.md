@@ -11,7 +11,7 @@
 
 **To test the application:**
 
-- Open the project in XCode without run the application.
+- Open the project in XCode do not run the application.
 - Click at InvitationTestes.swift file.
 - There are two functions to test whether customer is near of far from the office.
 - To test each one individually click at the button on the left of the func declaration. 
