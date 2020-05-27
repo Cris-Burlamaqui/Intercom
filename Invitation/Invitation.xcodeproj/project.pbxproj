@@ -14,9 +14,9 @@
 		F5A2B28C247E7A61003ED9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2B28B247E7A61003ED9D1 /* Assets.xcassets */; };
 		F5A2B28F247E7A61003ED9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2B28D247E7A61003ED9D1 /* LaunchScreen.storyboard */; };
 		F5A2B29A247E7A61003ED9D1 /* InvitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B299247E7A61003ED9D1 /* InvitationTests.swift */; };
-		F5A2B2AE247E82F5003ED9D1 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B2AD247E82F5003ED9D1 /* Customer.swift */; };
-		F5A2B2B2247E92C7003ED9D1 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B2B1247E92C7003ED9D1 /* CustomerCell.swift */; };
 		F5A2B2B6247EB901003ED9D1 /* customers.json in Resources */ = {isa = PBXBuildFile; fileRef = F5A2B2B5247EB901003ED9D1 /* customers.json */; };
+		F5E0150A247EE5E200784733 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E01509247EE5E200784733 /* Customer.swift */; };
+		F5E0150E247EE63C00784733 /* NearbyCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +41,9 @@
 		F5A2B295247E7A61003ED9D1 /* InvitationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvitationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2B299247E7A61003ED9D1 /* InvitationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationTests.swift; sourceTree = "<group>"; };
 		F5A2B29B247E7A61003ED9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5A2B2AD247E82F5003ED9D1 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = Invitation/Customer.swift; sourceTree = SOURCE_ROOT; };
-		F5A2B2B1247E92C7003ED9D1 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		F5A2B2B5247EB901003ED9D1 /* customers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customers.json; sourceTree = "<group>"; };
+		F5E01509247EE5E200784733 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCustomerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,7 @@
 				F5A2B2A4247E7B22003ED9D1 /* Resources */,
 				F5A2B2A5247E7B31003ED9D1 /* Models */,
 				F5A2B286247E7A5E003ED9D1 /* FindCustomerViewController.swift */,
+				F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */,
 				F5A2B288247E7A5E003ED9D1 /* Main.storyboard */,
 				F5A2B28B247E7A61003ED9D1 /* Assets.xcassets */,
 				F5A2B28D247E7A61003ED9D1 /* LaunchScreen.storyboard */,
@@ -118,8 +119,7 @@
 		F5A2B2A5247E7B31003ED9D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F5A2B2AD247E82F5003ED9D1 /* Customer.swift */,
-				F5A2B2B1247E92C7003ED9D1 /* CustomerCell.swift */,
+				F5E01509247EE5E200784733 /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -228,9 +228,9 @@
 			files = (
 				F5A2B287247E7A5E003ED9D1 /* FindCustomerViewController.swift in Sources */,
 				F5A2B283247E7A5E003ED9D1 /* AppDelegate.swift in Sources */,
+				F5E0150E247EE63C00784733 /* NearbyCustomerTableViewController.swift in Sources */,
 				F5A2B285247E7A5E003ED9D1 /* SceneDelegate.swift in Sources */,
-				F5A2B2AE247E82F5003ED9D1 /* Customer.swift in Sources */,
-				F5A2B2B2247E92C7003ED9D1 /* CustomerCell.swift in Sources */,
+				F5E0150A247EE5E200784733 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
