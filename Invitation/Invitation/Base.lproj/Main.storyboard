@@ -25,10 +25,10 @@
                                 <rect key="frame" x="157" y="263.5" width="100" height="100"/>
                                 <state key="normal" image="find_customer_icon"/>
                                 <connections>
-                                    <action selector="findCustomerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idY-ye-vSS"/>
+                                    <action selector="showCustomerListAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="idY-ye-vSS"/>
                                 </connections>
                             </button>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-Nk-crY">
+                            <tableView hidden="YES" clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DXY-Nk-crY">
                                 <rect key="frame" x="0.0" y="5" width="414" height="896"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="customerCell" focusStyle="custom" textLabel="4Bx-ko-55f" detailTextLabel="2Rg-Lg-Ps8" style="IBUITableViewCellStyleSubtitle" id="rnl-rJ-pDZ" customClass="CustomerCell" customModule="Invitation" customModuleProvider="target">

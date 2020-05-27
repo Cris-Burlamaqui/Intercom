@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class FindCustomerViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,29 +22,47 @@ class FindCustomerViewController: UIViewController, UITableViewDelegate, UITable
         ingestCustomerJSON()
     }
     
-    //MARK: Ingested customer json
+    //MARK: Ingest customer json
     
     private func ingestCustomerJSON() {
         
         do {
-            customerList = try Array<Customer>.init(fileName: "customers")
-            customerList = customerList.sorted { $0.user_id < $1.user_id }
+            let sortedList = try Array<Customer>.init(fileName: "customers").sorted{ $0.user_id < $1.user_id }
+            sortCustomers(sortedList)
         } catch  {
             print(error)
         }
         
     }
     
-    // MARK: Find near customer
+    // MARK: Sort customer list for distance
     
-    @IBAction func findCustomerAction(_ sender: UIButton) {
+    func sortCustomers(_ list: [Customer]) {
+
+        let officeCoordinate = CLLocation.init(latitude: 53.339428, longitude: -6.257664)
         
-        customerTableView.isHidden = false
-        customerTableView.alpha = 0.0
+        for customer in list {
+            
+            let lati = customer.latitude.doubleValue
+            let long = customer.longitude.doubleValue
+            
+            let customerCoordinate = CLLocation.init(latitude: lati, longitude: long)
+            let distanceInKm = officeCoordinate.distance(from: customerCoordinate) / 1000
+            
+            if distanceInKm <= 100 {
+                customerList.append(customer)
+            }
+        }
+    }
+    
+    // MARK: Show list of customer
+    
+    @IBAction func showCustomerListAction(_ sender: UIButton) {
         
         UIView.animate(withDuration: 1) {
+            
+            self.customerTableView.isHidden = false
             self.customerTableView.alpha = 1
-            self.customerTableView.reloadData()
         }
     }
     
@@ -61,6 +80,13 @@ class FindCustomerViewController: UIViewController, UITableViewDelegate, UITable
         cell.customerName.text = customerList[indexPath.row].name
         
         return cell
+    }
+    
+}
+
+extension String {
+    var doubleValue: Double {
+        return (self as NSString).doubleValue
     }
 }
 
