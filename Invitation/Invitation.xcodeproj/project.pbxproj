@@ -14,6 +14,7 @@
 		F5A2B28C247E7A61003ED9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A2B28B247E7A61003ED9D1 /* Assets.xcassets */; };
 		F5A2B28F247E7A61003ED9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5A2B28D247E7A61003ED9D1 /* LaunchScreen.storyboard */; };
 		F5A2B29A247E7A61003ED9D1 /* InvitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B299247E7A61003ED9D1 /* InvitationTests.swift */; };
+		F5A2B2AE247E82F5003ED9D1 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B2AD247E82F5003ED9D1 /* Customer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		F5A2B299247E7A61003ED9D1 /* InvitationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationTests.swift; sourceTree = "<group>"; };
 		F5A2B29B247E7A61003ED9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A2B2A8247E7C83003ED9D1 /* customers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = customers.json; sourceTree = "<group>"; };
+		F5A2B2AD247E82F5003ED9D1 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Customer.swift; path = Invitation/Customer.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		F5A2B2A5247E7B31003ED9D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F5A2B2AD247E82F5003ED9D1 /* Customer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				F5A2B287247E7A5E003ED9D1 /* ViewController.swift in Sources */,
 				F5A2B283247E7A5E003ED9D1 /* AppDelegate.swift in Sources */,
 				F5A2B285247E7A5E003ED9D1 /* SceneDelegate.swift in Sources */,
+				F5A2B2AE247E82F5003ED9D1 /* Customer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
