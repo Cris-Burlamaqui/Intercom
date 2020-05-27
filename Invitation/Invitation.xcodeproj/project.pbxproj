@@ -89,8 +89,7 @@
 				F5A2B284247E7A5E003ED9D1 /* SceneDelegate.swift */,
 				F5A2B2A4247E7B22003ED9D1 /* Resources */,
 				F5A2B2A5247E7B31003ED9D1 /* Models */,
-				F5A2B286247E7A5E003ED9D1 /* FindCustomerViewController.swift */,
-				F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */,
+				F5E0150F247EED1F00784733 /* Controllers */,
 				F5A2B288247E7A5E003ED9D1 /* Main.storyboard */,
 				F5A2B28B247E7A61003ED9D1 /* Assets.xcassets */,
 				F5A2B28D247E7A61003ED9D1 /* LaunchScreen.storyboard */,
@@ -122,6 +121,15 @@
 				F5E01509247EE5E200784733 /* Customer.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F5E0150F247EED1F00784733 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5A2B286247E7A5E003ED9D1 /* FindCustomerViewController.swift */,
+				F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
