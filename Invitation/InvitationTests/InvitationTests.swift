@@ -10,25 +10,43 @@ import XCTest
 @testable import Invitation
 
 class InvitationTests: XCTestCase {
+    
+    var nearby: NearbyCustomerTableViewController!
+    var customerList: [Customer]!
+    
+    let phoenixPark = Customer.init(user_id: 1, name: "Phoenix Park", latitude: "53.356805", longitude: "-6.329554")
+    let madameTussauds = Customer.init(user_id: 2, name: "Madame Tussauds", latitude: "51.631016", longitude: "-0.141890")
+    let guinnessStorehouse = Customer.init(user_id: 3, name: "Guinness Storehouse", latitude: "53.342367", longitude: "-6.286645")
+    
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        nearby = NearbyCustomerTableViewController()
+        customerList = [phoenixPark, madameTussauds, guinnessStorehouse]
+        
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        
+        customerList = []
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testNearDistance() throws {
+        
+        let correctList = [phoenixPark, guinnessStorehouse]
+        let sortedList = nearby.sortCustomers(customerList)
+        
+        XCTAssertEqual(correctList, sortedList)
+        
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testFarDistance() throws {
+    
+        let correctList = [madameTussauds]
+        let sortedList = nearby.sortCustomers(customerList)
+        
+        XCTAssertNotEqual(correctList, sortedList)
+        
     }
 
 }
