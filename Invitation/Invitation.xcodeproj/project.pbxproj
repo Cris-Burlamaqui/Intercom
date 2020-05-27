@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F586D2B6247F0558008F5CA8 /* InvitationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F586D2B5247F0558008F5CA8 /* InvitationTests.swift */; };
 		F5A2B283247E7A5E003ED9D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B282247E7A5E003ED9D1 /* AppDelegate.swift */; };
 		F5A2B285247E7A5E003ED9D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B284247E7A5E003ED9D1 /* SceneDelegate.swift */; };
 		F5A2B287247E7A5E003ED9D1 /* FindCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A2B286247E7A5E003ED9D1 /* FindCustomerViewController.swift */; };
@@ -19,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F5A2B296247E7A61003ED9D1 /* PBXContainerItemProxy */ = {
+		F586D2B8247F0558008F5CA8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F5A2B277247E7A5E003ED9D1 /* Project object */;
 			proxyType = 1;
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F586D2B3247F0558008F5CA8 /* InvitationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvitationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F586D2B5247F0558008F5CA8 /* InvitationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitationTests.swift; sourceTree = "<group>"; };
+		F586D2B7247F0558008F5CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5A2B27F247E7A5E003ED9D1 /* Invitation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Invitation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2B282247E7A5E003ED9D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5A2B284247E7A5E003ED9D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,21 +41,20 @@
 		F5A2B28B247E7A61003ED9D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5A2B28E247E7A61003ED9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5A2B290247E7A61003ED9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F5A2B295247E7A61003ED9D1 /* InvitationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvitationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5A2B2B5247EB901003ED9D1 /* customers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = customers.json; sourceTree = "<group>"; };
 		F5E01509247EE5E200784733 /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
 		F5E0150D247EE63C00784733 /* NearbyCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearbyCustomerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F5A2B27C247E7A5E003ED9D1 /* Frameworks */ = {
+		F586D2B0247F0558008F5CA8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A2B292247E7A61003ED9D1 /* Frameworks */ = {
+		F5A2B27C247E7A5E003ED9D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -61,10 +64,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F586D2B4247F0558008F5CA8 /* InvitationTests */ = {
+			isa = PBXGroup;
+			children = (
+				F586D2B5247F0558008F5CA8 /* InvitationTests.swift */,
+				F586D2B7247F0558008F5CA8 /* Info.plist */,
+			);
+			path = InvitationTests;
+			sourceTree = "<group>";
+		};
 		F5A2B276247E7A5E003ED9D1 = {
 			isa = PBXGroup;
 			children = (
 				F5A2B281247E7A5E003ED9D1 /* Invitation */,
+				F586D2B4247F0558008F5CA8 /* InvitationTests */,
 				F5A2B280247E7A5E003ED9D1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				F5A2B27F247E7A5E003ED9D1 /* Invitation.app */,
-				F5A2B295247E7A61003ED9D1 /* InvitationTests.xctest */,
+				F586D2B3247F0558008F5CA8 /* InvitationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +135,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F586D2B2247F0558008F5CA8 /* InvitationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F586D2BA247F0558008F5CA8 /* Build configuration list for PBXNativeTarget "InvitationTests" */;
+			buildPhases = (
+				F586D2AF247F0558008F5CA8 /* Sources */,
+				F586D2B0247F0558008F5CA8 /* Frameworks */,
+				F586D2B1247F0558008F5CA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F586D2B9247F0558008F5CA8 /* PBXTargetDependency */,
+			);
+			name = InvitationTests;
+			productName = InvitationTests;
+			productReference = F586D2B3247F0558008F5CA8 /* InvitationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F5A2B27E247E7A5E003ED9D1 /* Invitation */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5A2B29E247E7A61003ED9D1 /* Build configuration list for PBXNativeTarget "Invitation" */;
@@ -139,24 +170,6 @@
 			productReference = F5A2B27F247E7A5E003ED9D1 /* Invitation.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F5A2B294247E7A61003ED9D1 /* InvitationTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F5A2B2A1247E7A61003ED9D1 /* Build configuration list for PBXNativeTarget "InvitationTests" */;
-			buildPhases = (
-				F5A2B291247E7A61003ED9D1 /* Sources */,
-				F5A2B292247E7A61003ED9D1 /* Frameworks */,
-				F5A2B293247E7A61003ED9D1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F5A2B297247E7A61003ED9D1 /* PBXTargetDependency */,
-			);
-			name = InvitationTests;
-			productName = InvitationTests;
-			productReference = F5A2B295247E7A61003ED9D1 /* InvitationTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -167,12 +180,12 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Cris Burlamaqui";
 				TargetAttributes = {
-					F5A2B27E247E7A5E003ED9D1 = {
-						CreatedOnToolsVersion = 11.5;
-					};
-					F5A2B294247E7A61003ED9D1 = {
+					F586D2B2247F0558008F5CA8 = {
 						CreatedOnToolsVersion = 11.5;
 						TestTargetID = F5A2B27E247E7A5E003ED9D1;
+					};
+					F5A2B27E247E7A5E003ED9D1 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -190,12 +203,19 @@
 			projectRoot = "";
 			targets = (
 				F5A2B27E247E7A5E003ED9D1 /* Invitation */,
-				F5A2B294247E7A61003ED9D1 /* InvitationTests */,
+				F586D2B2247F0558008F5CA8 /* InvitationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F586D2B1247F0558008F5CA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5A2B27D247E7A5E003ED9D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,16 +227,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A2B293247E7A61003ED9D1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F586D2AF247F0558008F5CA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F586D2B6247F0558008F5CA8 /* InvitationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F5A2B27B247E7A5E003ED9D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,20 +250,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F5A2B291247E7A61003ED9D1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F5A2B297247E7A61003ED9D1 /* PBXTargetDependency */ = {
+		F586D2B9247F0558008F5CA8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F5A2B27E247E7A5E003ED9D1 /* Invitation */;
-			targetProxy = F5A2B296247E7A61003ED9D1 /* PBXContainerItemProxy */;
+			targetProxy = F586D2B8247F0558008F5CA8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -266,6 +280,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F586D2BB247F0558008F5CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InvitationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burlamaqui.intercom.InvitationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
+			};
+			name = Debug;
+		};
+		F586D2BC247F0558008F5CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = InvitationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.burlamaqui.intercom.InvitationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
+			};
+			name = Release;
+		};
 		F5A2B29C247E7A61003ED9D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -414,51 +466,18 @@
 			};
 			name = Release;
 		};
-		F5A2B2A2247E7A61003ED9D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InvitationTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.burlamaqui.intercom.InvitationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
-			};
-			name = Debug;
-		};
-		F5A2B2A3247E7A61003ED9D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = InvitationTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.burlamaqui.intercom.InvitationTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F586D2BA247F0558008F5CA8 /* Build configuration list for PBXNativeTarget "InvitationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F586D2BB247F0558008F5CA8 /* Debug */,
+				F586D2BC247F0558008F5CA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F5A2B27A247E7A5E003ED9D1 /* Build configuration list for PBXProject "Invitation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -473,15 +492,6 @@
 			buildConfigurations = (
 				F5A2B29F247E7A61003ED9D1 /* Debug */,
 				F5A2B2A0247E7A61003ED9D1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F5A2B2A1247E7A61003ED9D1 /* Build configuration list for PBXNativeTarget "InvitationTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F5A2B2A2247E7A61003ED9D1 /* Debug */,
-				F5A2B2A3247E7A61003ED9D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
