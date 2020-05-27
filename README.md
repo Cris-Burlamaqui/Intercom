@@ -1,7 +1,7 @@
 # Intercom
 ## Mobile Engineer - iOS assignment test
 
-### Invitation
+### Invitation App
 
 **To run the application:**
 
