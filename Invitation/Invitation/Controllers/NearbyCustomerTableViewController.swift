@@ -31,7 +31,7 @@ class NearbyCustomerTableViewController: UITableViewController {
         
         do {
             let sortedList = try Array<Customer>.init(fileName: "customers").sorted{ $0.user_id < $1.user_id }
-            sortCustomers(sortedList)
+            customerList = sortCustomers(sortedList)
         } catch  {
             print(error)
         }
@@ -40,9 +40,10 @@ class NearbyCustomerTableViewController: UITableViewController {
     
     // MARK: Sort customer list for distance
     
-    func sortCustomers(_ list: [Customer]) {
+    func sortCustomers(_ list: [Customer]) -> [Customer] {
 
         let officeCoordinate = CLLocation.init(latitude: 53.339428, longitude: -6.257664)
+        var customers = Array<Customer>()
         
         for customer in list {
             
@@ -53,9 +54,10 @@ class NearbyCustomerTableViewController: UITableViewController {
             let distanceInKm = officeCoordinate.distance(from: customerCoordinate) / 1000
             
             if distanceInKm <= 100 {
-                customerList.append(customer)
+                customers.append(customer)
             }
         }
+        return customers
     }
     
 
